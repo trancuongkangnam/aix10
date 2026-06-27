@@ -30,13 +30,13 @@ export default function Hero() {
           <div>
             <h1
               className="font-black uppercase leading-tight"
-              style={{ fontSize: 'clamp(2.4rem, 5vw, 3.8rem)', color: '#c9a055', letterSpacing: '-0.01em' }}
+              style={{ fontSize: 'clamp(1.6rem, 3vw, 3rem)', color: '#c9a055', letterSpacing: '-0.01em', whiteSpace: 'nowrap' }}
             >
               TINH HOA HÀN QUỐC
             </h1>
             <h1
               className="font-black uppercase leading-tight"
-              style={{ fontSize: 'clamp(2rem, 4.5vw, 3.2rem)', color: '#ffffff', letterSpacing: '-0.01em' }}
+              style={{ fontSize: 'clamp(1.3rem, 2.5vw, 2.5rem)', color: '#ffffff', letterSpacing: '-0.01em', whiteSpace: 'nowrap' }}
             >
               NÂNG TẦM SỨC KHỎE VIỆT
             </h1>
