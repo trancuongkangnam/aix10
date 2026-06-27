@@ -77,6 +77,8 @@ export default function Footer() {
                   key={s.label}
                   href={s.href}
                   aria-label={s.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded flex items-center justify-center text-gray-400 hover:text-white transition-all"
                   style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.1)' }}
                   onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(201,160,85,0.5)')}
@@ -135,7 +137,7 @@ export default function Footer() {
                 </li>
                 <li className="flex gap-2">
                   <span style={{ color: '#c9a055' }}>📞</span>
-                  <a href="tel:0966999888" className="hover:text-white">0982 848 881</a>
+                  <a href="tel:0982848881" className="hover:text-white">0982 848 881</a>
                 </li>
                 <li className="flex gap-2">
                   <span style={{ color: '#c9a055' }}>✉️</span>
