@@ -9,43 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#0A2D6E',
-          light: '#1A4BAD',
-          dark: '#061A45',
+        gold: {
+          DEFAULT: '#c9a055',
+          light: '#e0bc7a',
+          dark: '#a07830',
         },
-        accent: {
-          DEFAULT: '#2563EB',
-          hover: '#1D4ED8',
-        },
-        cta: {
-          DEFAULT: '#EF4444',
-          hover: '#DC2626',
-        },
-        section: {
-          alt: '#0D3580',
+        dark: {
+          DEFAULT: '#0a0f1e',
+          2: '#0d1528',
+          3: '#111827',
+          card: '#12192e',
         },
       },
       fontFamily: {
-        sans: ['Be Vietnam Pro', 'Inter', 'sans-serif'],
-      },
-      backdropBlur: {
-        xs: '2px',
-      },
-      animation: {
-        'float': 'float 3s ease-in-out infinite',
-        'count-up': 'countUp 2s ease-out forwards',
-        'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-12px)' },
-        },
-        fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
+        sans: ['Be Vietnam Pro', 'sans-serif'],
       },
     },
   },
