@@ -3,7 +3,7 @@ const nextConfig = {
   typescript: { ignoreBuildErrors: true },
   eslint: { ignoreDuringBuilds: true },
   images: {
-    domains: ['my.sepay.vn'],
+    domains: ['my.sepay.vn', 'img.youtube.com'],
   },
   env: {
     SUPABASE_URL: process.env.SUPABASE_URL,

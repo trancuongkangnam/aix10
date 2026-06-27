@@ -40,7 +40,7 @@ export default function Navbar() {
             TC
           </div>
           <div className="hidden sm:block leading-none">
-            <div className="text-white font-bold text-[13px] tracking-wide">TRẦN CƯỜNG KANGNAM</div>
+            <div className="text-white font-bold text-[13px] tracking-wide">TRẦN CƯƠNG KANGNAM</div>
             <div className="text-[9px] font-semibold tracking-[0.2em] mt-0.5" style={{ color: '#c9a055' }}>KOREAN PREMIUM</div>
           </div>
         </a>
@@ -114,7 +114,7 @@ export default function Navbar() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            0966 999 888
+            0982 848 881
           </a>
           <button className="lg:hidden p-2 text-gray-300" onClick={() => setMobileOpen(!mobileOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,7 +143,7 @@ export default function Navbar() {
             </a>
           ))}
           <div className="px-5 py-4">
-            <a href="tel:0966999888" className="btn-gold w-full justify-center">0966 999 888</a>
+            <a href="tel:0966999888" className="btn-gold w-full justify-center">0982 848 881</a>
           </div>
         </div>
       )}

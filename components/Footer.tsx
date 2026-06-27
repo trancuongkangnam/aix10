@@ -64,12 +64,12 @@ export default function Footer() {
                 TC
               </div>
               <div>
-                <div className="text-white font-bold text-[12px]">TRẦN CƯỜNG KANGNAM</div>
+                <div className="text-white font-bold text-[12px]">TRẦN CƯƠNG KANGNAM</div>
                 <div className="text-[9px] font-semibold tracking-[0.2em]" style={{ color: '#c9a055' }}>KOREAN PREMIUM</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Nhập khẩu & phân phối hàng Hàn Quốc chính hãng. Mang tinh hoa Hàn Quốc đến với người Việt.
+              Nhập khẩu & phân phối hàng Hàn Quốc chính hãng. Chuyên: Sâm – Nấm Linh Chi – Mỹ Phẩm – Bánh Kẹo – Hàng Gia Dụng Hàn Quốc.
             </p>
             <div className="flex gap-3">
               {socials.map((s) => (
@@ -131,11 +131,11 @@ export default function Footer() {
               <ul className="space-y-2.5 text-sm text-gray-400">
                 <li className="flex gap-2">
                   <span style={{ color: '#c9a055' }}>📍</span>
-                  Số 123, Đường ABC, Phường XYZ, Quận 1, TP. Hồ Chí Minh
+                  Lô 90.2 Đường Trường Chinh, P. Tân Bình, TP. Hải Dương
                 </li>
                 <li className="flex gap-2">
                   <span style={{ color: '#c9a055' }}>📞</span>
-                  <a href="tel:0966999888" className="hover:text-white">0966 999 888</a>
+                  <a href="tel:0966999888" className="hover:text-white">0982 848 881</a>
                 </li>
                 <li className="flex gap-2">
                   <span style={{ color: '#c9a055' }}>✉️</span>

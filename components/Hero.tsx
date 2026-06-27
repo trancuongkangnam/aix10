@@ -15,14 +15,12 @@ export default function Hero() {
         paddingTop: '66px',
       }}
     >
-      {/* Decorative wave lines */}
+      {/* Decorative */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <svg className="absolute bottom-0 left-0 w-full opacity-10" viewBox="0 0 1440 320" preserveAspectRatio="none">
           <path fill="#c9a055" d="M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,133.3C1120,117,1280,139,1360,149.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" />
         </svg>
-        {/* Gold glow top-right */}
         <div className="absolute -top-20 right-0 w-[500px] h-[500px] rounded-full opacity-20" style={{ background: 'radial-gradient(circle, #c9a055 0%, transparent 70%)' }} />
-        {/* Blue glow bottom-left */}
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-10" style={{ background: 'radial-gradient(circle, #1e40af 0%, transparent 70%)' }} />
       </div>
 
@@ -45,11 +43,10 @@ export default function Hero() {
           </div>
 
           <p className="text-gray-300 leading-relaxed max-w-lg" style={{ fontSize: '0.95rem' }}>
-            Trần Cường Kangnam – 20 năm nhập khẩu và phân phối hàng Hàn Quốc chính hãng,
+            Trần Cương Kangnam – 20 năm nhập khẩu và phân phối hàng Hàn Quốc chính hãng,
             đồng hành cùng hàng triệu gia đình Việt sống khỏe mỗi ngày.
           </p>
 
-          {/* Badges */}
           <div className="flex flex-wrap gap-3">
             {badges.map((b) => (
               <div
@@ -63,7 +60,6 @@ export default function Hero() {
             ))}
           </div>
 
-          {/* CTA */}
           <div className="pt-2">
             <a
               href="#products"
@@ -80,59 +76,39 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT – Product visual */}
+        {/* RIGHT – CEO photo */}
         <div className="relative flex justify-center items-end">
-          {/* Korean flag circle background */}
-          <div
-            className="absolute top-0 right-0 w-72 h-72 rounded-full opacity-20"
-            style={{ background: 'radial-gradient(circle, #c9a055 0%, transparent 65%)' }}
-          />
+          <div className="absolute top-0 right-0 w-72 h-72 rounded-full opacity-20" style={{ background: 'radial-gradient(circle, #c9a055 0%, transparent 65%)' }} />
 
-          {/* Main visual placeholder */}
           <div className="relative w-full max-w-md">
-            {/* Person placeholder */}
-            <div
-              className="relative mx-auto rounded-2xl overflow-hidden"
-              style={{ height: '420px', background: 'linear-gradient(180deg, rgba(201,160,85,0.08) 0%, rgba(10,15,30,0.3) 100%)', border: '1px solid rgba(201,160,85,0.2)' }}
-            >
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-                <div className="w-24 h-24 rounded-full mb-4 flex items-center justify-center text-4xl" style={{ background: 'rgba(201,160,85,0.15)', border: '2px solid rgba(201,160,85,0.3)' }}>
-                  👤
-                </div>
-                <div className="text-white font-bold text-lg">Trần Cường Kangnam</div>
-                <div className="text-sm mt-1" style={{ color: '#c9a055' }}>Nhà sáng lập & CEO</div>
-                <div className="mt-6 text-gray-400 text-sm">[ Ảnh sản phẩm & người đại diện ]</div>
-              </div>
+            <div className="relative mx-auto rounded-2xl overflow-hidden" style={{ height: '460px' }}>
+              {/* Actual CEO photo */}
+              <img
+                src="/images/ceo.jpg"
+                alt="Trần Cương Kangnam – Nhà sáng lập & CEO"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
+              />
+              {/* Overlay gradient bottom */}
+              <div className="absolute bottom-0 left-0 right-0 h-24" style={{ background: 'linear-gradient(to top, rgba(10,15,30,0.8), transparent)' }} />
 
-              {/* Product badges floating */}
-              <div
-                className="absolute top-4 right-4 px-3 py-1.5 rounded text-xs font-bold"
-                style={{ background: '#c9a055', color: '#0a0f1e' }}
-              >
+              {/* Tag top-right */}
+              <div className="absolute top-4 right-4 px-3 py-1.5 rounded text-xs font-bold" style={{ background: '#c9a055', color: '#0a0f1e' }}>
                 🇰🇷 Korean Premium
               </div>
-              <div
-                className="absolute bottom-4 left-4 px-3 py-2 rounded-lg text-xs"
-                style={{ background: 'rgba(0,0,0,0.7)', color: '#e0bc7a', border: '1px solid rgba(201,160,85,0.3)' }}
-              >
-                <div className="font-bold">홍삼 · 영지버섯 · 동충하초</div>
-                <div className="text-gray-400 mt-0.5">Chính hãng từ Hàn Quốc</div>
+
+              {/* Name overlay bottom */}
+              <div className="absolute bottom-4 left-4 right-4 px-3 py-2 rounded-lg text-xs" style={{ background: 'rgba(0,0,0,0.65)', border: '1px solid rgba(201,160,85,0.3)' }}>
+                <div className="font-bold text-sm" style={{ color: '#e0bc7a' }}>TRẦN CƯƠNG KANGNAM</div>
+                <div className="text-gray-300 mt-0.5">Nhà Sáng Lập & CEO – Korean Premium</div>
               </div>
             </div>
 
-            {/* Stat card floating */}
-            <div
-              className="absolute -left-6 top-1/3 px-4 py-3 rounded-lg shadow-xl"
-              style={{ background: '#0d1528', border: '1px solid rgba(201,160,85,0.3)' }}
-            >
+            {/* Stat cards floating */}
+            <div className="absolute -left-6 top-1/3 px-4 py-3 rounded-lg shadow-xl" style={{ background: '#0d1528', border: '1px solid rgba(201,160,85,0.3)' }}>
               <div className="text-xs text-gray-400 mb-1">Khách hàng tin tưởng</div>
               <div className="text-2xl font-black" style={{ color: '#c9a055' }}>1 Triệu+</div>
             </div>
-
-            <div
-              className="absolute -right-4 bottom-16 px-4 py-3 rounded-lg shadow-xl"
-              style={{ background: '#0d1528', border: '1px solid rgba(201,160,85,0.3)' }}
-            >
+            <div className="absolute -right-4 bottom-20 px-4 py-3 rounded-lg shadow-xl" style={{ background: '#0d1528', border: '1px solid rgba(201,160,85,0.3)' }}>
               <div className="text-xs text-gray-400 mb-1">Sản phẩm chính hãng</div>
               <div className="text-2xl font-black" style={{ color: '#c9a055' }}>1000+</div>
             </div>
@@ -140,7 +116,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-20 pointer-events-none" style={{ background: 'linear-gradient(to top, #fff 0%, transparent 100%)' }} />
     </section>
   )
