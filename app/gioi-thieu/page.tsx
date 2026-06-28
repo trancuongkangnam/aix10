@@ -615,6 +615,12 @@ export default function GioiThieuPage() {
         </section>
 
         {/* ── CTA ── */}
+        <style>{`
+          .gt-cta-gold { background: #c9a055; color: #0a0f1e; }
+          .gt-cta-gold:hover { background: #a07830; }
+          .gt-cta-outline { background: transparent; color: #e0bc7a; border: 1px solid rgba(201,160,85,0.5); }
+          .gt-cta-outline:hover { background: rgba(201,160,85,0.12); }
+        `}</style>
         <section
           style={{
             background: 'linear-gradient(135deg, #070c1a 0%, #0a1428 50%, #0d1f3c 100%)',
@@ -635,25 +641,13 @@ export default function GioiThieuPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/#contact"
-                className="inline-flex items-center justify-center gap-2 font-bold text-sm uppercase tracking-wider px-7 py-4 rounded transition-all"
-                style={{ background: '#c9a055', color: '#0a0f1e' }}
-                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = '#a07830')}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = '#c9a055')}
+                className="gt-cta-gold inline-flex items-center justify-center gap-2 font-bold text-sm uppercase tracking-wider px-7 py-4 rounded transition-all"
               >
                 🤝 Kết Nối Với Trần Cương Kangnam
               </a>
               <a
                 href="/#products"
-                className="inline-flex items-center justify-center gap-2 font-bold text-sm uppercase tracking-wider px-7 py-4 rounded transition-all"
-                style={{ background: 'transparent', color: '#e0bc7a', border: '1px solid rgba(201,160,85,0.5)' }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLElement
-                  el.style.background = 'rgba(201,160,85,0.1)'
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLElement
-                  el.style.background = 'transparent'
-                }}
+                className="gt-cta-outline inline-flex items-center justify-center gap-2 font-bold text-sm uppercase tracking-wider px-7 py-4 rounded transition-all"
               >
                 🇰🇷 Khám Phá Sản Phẩm Korean Premium
               </a>
