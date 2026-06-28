@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 const navItems = [
   { label: 'Trang Chủ', href: '#', active: true },
-  { label: 'Giới Thiệu', href: '#about' },
+  { label: 'Giới Thiệu', href: '/gioi-thieu' },
   {
     label: 'Sản Phẩm', href: '#products',
     children: ['Sâm Hàn Quốc', 'Linh Chi', 'Đông Trùng Hạ Thảo', 'Mỹ Phẩm Hàn Quốc', 'Thực Phẩm Chức Năng', 'Trái Cây Nhập Khẩu', 'Hàng Gia Dụng'],
@@ -107,7 +107,7 @@ export default function Navbar() {
             </svg>
           </button>
           <a
-            href="tel:0966999888"
+            href="tel:0982848881"
             className="hidden lg:flex items-center gap-2 text-[13px] font-semibold px-4 py-2 rounded transition-all"
             style={{ background: 'rgba(201,160,85,0.12)', color: '#c9a055', border: '1px solid rgba(201,160,85,0.35)' }}
           >
@@ -143,7 +143,7 @@ export default function Navbar() {
             </a>
           ))}
           <div className="px-5 py-4">
-            <a href="tel:0966999888" className="btn-gold w-full justify-center">0982 848 881</a>
+            <a href="tel:0982848881" className="btn-gold w-full justify-center">0982 848 881</a>
           </div>
         </div>
       )}
