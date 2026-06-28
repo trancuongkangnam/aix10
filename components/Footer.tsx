@@ -163,6 +163,40 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Google Maps */}
+        <div className="mb-10">
+          <h4
+            className="text-white font-bold text-sm mb-4 uppercase tracking-wide"
+            style={{ borderBottom: '1px solid rgba(201,160,85,0.3)', paddingBottom: '8px' }}
+          >
+            📍 Vị Trí Kangnam Mart
+          </h4>
+          <div className="rounded-xl overflow-hidden" style={{ border: '1px solid rgba(201,160,85,0.2)' }}>
+            <iframe
+              src="https://www.google.com/maps?q=Lô+90.2+Đường+Trường+Chinh,+Phường+Tân+Bình,+Thành+phố+Hải+Dương,+Việt+Nam&output=embed&hl=vi"
+              width="100%"
+              height="300"
+              style={{ border: 'none', display: 'block' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Vị trí Kangnam Mart – Lô 90.2 Đường Trường Chinh, P. Tân Bình, TP. Hải Dương"
+            />
+          </div>
+          <a
+            href="https://maps.app.goo.gl/Ys4p8gsfdMnkwWaF6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-3 text-xs font-semibold transition-colors"
+            style={{ color: '#c9a055' }}
+          >
+            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            Xem trên Google Maps
+          </a>
+        </div>
+
         {/* Bottom bar */}
         <div
           className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 text-sm text-gray-500"
